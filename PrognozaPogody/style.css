@@ -1,0 +1,169 @@
+body{
+    background-color: #3b5989;
+    color: #3A5085;
+    font-family: 'Arial Black', Arial, sans-serif;
+}
+.obraz{
+    position: absolute;
+    z-index: -1;
+    left: 0px;
+    top: 0px;
+}
+
+.box{
+    min-width: 360px;  /* nie działa */
+    max-width: 1000px;
+    width: 60%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+header {
+    border-radius: 8px;
+    background-color: #fbfbfbd5;
+    padding: 15px;
+    margin-bottom: 3%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    gap: 10px; 
+    align-items: center;
+}
+
+main{
+    overflow-y: auto; 
+    height: 530px;
+    border-radius: 8px;
+    background-color: #fbfbfbd5;
+    text-align: center;
+    padding: 15px;
+}
+
+.imgTlo{
+    border-radius: 10px;
+    background-color: #b6b6b6;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    width: 100px;
+}
+
+table {
+    border-radius: 10px;
+    border: 3px solid #2E406A;
+    border-spacing: 0;       
+    overflow: hidden;        
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td, th {
+    padding: 8px;
+    border: 1px solid #2E406A;
+}
+
+
+hr{
+    margin: 15px;
+}
+
+#noweMiasto {
+    padding: 10px 15px;
+    width: 250px;
+    font-size: 16px;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#noweMiasto:focus {
+    border-color: #2ecc71;
+    box-shadow: 0 0 8px rgba(46, 204, 113, 0.5);
+}
+
+.guzik {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.guzik:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+.linia{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: none;              
+    height: 2px;               
+    background-color: #d2e222;
+}
+
+/* TRYB NOCNY */
+
+body.noc {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.noc header {
+    background-color: #1e1e1edb;
+    color: #ffffff;
+}
+
+body.noc main {
+    background-color: #1e1e1edb;
+    color: #ffffff;
+}
+
+body.noc table {
+    border: 3px solid #444;
+}
+
+body.noc td, 
+body.noc th {
+    border: 1px solid #444;
+}
+
+body.noc #noweMiasto {
+    background-color: #222;
+    color: #eee;
+    border: 2px solid #555;
+}
+
+body.noc #noweMiasto:focus {
+    border-color: #2ecc71;
+    box-shadow: 0 0 8px rgba(46, 204, 113, 0.5);
+}
+
+body.noc .guzik {
+    background-color: #555;
+    color: #fff;
+}
+
+body.noc .guzik:hover {
+    background-color: #666;
+    transform: scale(1.05);
+}
+
+body.noc .imgTlo {
+    background-color: #333;
+}
+
+body.noc .linia {
+    background-color: #888;
+}
